@@ -2,6 +2,7 @@ var Video = Backbone.Model.extend({
 
   initialize: function(video) {
     // override youtube's complex id field
+    console.log("something")
     this.set('id', video.id.videoId);
   },
 
@@ -10,3 +11,5 @@ var Video = Backbone.Model.extend({
   }
 
 });
+
+
